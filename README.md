@@ -9,7 +9,6 @@ function implementation has been replaced with a fail-closed exception.
 
 - `agent.py`: an inert outline of the original agent functions.
 - `server.py`: an inert outline of the original server functions and handler.
-- `ANALYSIS_HE.md`: architecture, security findings, and neutralization notes.
 - `tests/test_neutralization.py`: structural and runtime safety checks.
 
 All original imports, connection configuration, shared keys, globals, startup
@@ -35,18 +34,8 @@ listening on a port and no background task is started.
 
 The original experiment used an agent polling a server for commands. It
 included privacy-invasive and unsafe behavior; this edition documents those
-findings without distributing the working implementation. See the Hebrew
-analysis for the removed behaviors and limitations. The neutralization and
+findings without distributing the working implementation. The neutralization and
 documentation were prepared with AI assistance; explain your own contribution
 and what you understand accurately. This is not a claim of military admission
 eligibility or production security certification.
 
-## GitHub upload
-
-Extract the ZIP into a new folder. Create an empty GitHub repository named
-`Neutralized-Remote-Access-Study`. Use **Add file → Upload files** to upload
-only this new folder's contents, including `.gitignore` and `tests`.
-Do not upload the original agent/server files, EXE, tokens or personal logs.
-The ZIP is a delivery package: extract it so GitHub can display the source.
-
-No license has been selected; choose one before inviting reuse.
