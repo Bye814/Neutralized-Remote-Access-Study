@@ -1,24 +1,25 @@
 # Neutralized Remote Access Study
 
-An inert, documented study edition derived from an experimental Python
-agent/server project. **This repository is not a working remote-access tool.**
-Function names and signatures are retained for discussion; every original
-function implementation has been replaced with a fail-closed exception.
+A learning project based on an experimental Python agent/server application developed with substantial AI assistance.
 
-## What remains
+**This repository contains a disabled code outline, not a working remote-access tool.** I am currently reviewing the code and refreshing my Python fundamentals to better understand the original design.
 
-- `agent.py`: an inert outline of the original agent functions.
-- `server.py`: an inert outline of the original server functions and handler.
-- `tests/test_neutralization.py`: structural and runtime safety checks.
+## Repository contents
 
-All original imports, connection configuration, shared keys, globals, startup
-calls and functional bodies were removed. The handler no longer inherits from
-an HTTP server handler. No binary, packager configuration, original source
-copy, collected data or executable build instructions are included.
+- `agent.py` — disabled outline of the original agent functions.
+- `server.py` — disabled outline of the original server functions and request handler.
+- `tests/test_neutralization.py` — structural and runtime checks for the disabled implementation.
+- `.gitignore` — excludes common generated files, binaries, and local configuration.
 
-## Inspect and validate
+## Neutralization
 
-Python 3.10+; no third-party dependencies.
+All original function bodies, network configuration, imports, and startup actions were removed. Retained functions raise `RuntimeError` when called.
+
+The code does not connect to a server, listen on a port, capture keystrokes or screenshots, execute remote commands, or register itself to run at startup.
+
+## Run and test
+
+Requires Python 3.10 or later. No third-party packages are needed.
 
 ```sh
 python agent.py
@@ -26,16 +27,15 @@ python server.py
 python -m unittest discover -s tests -v
 ```
 
-Running either module only prints an inert-edition notice and exits. Calling
-any retained function or handler method raises `RuntimeError`. Nothing is
-listening on a port and no background task is started.
+Running either source file prints a notice and exits. The tests check the neutralized code; they do not validate the original application's functionality or security.
 
-## Portfolio context
+## Learning goals
 
-The original experiment used an agent polling a server for commands. It
-included privacy-invasive and unsafe behavior; this edition documents those
-findings without distributing the working implementation. The neutralization and
-documentation were prepared with AI assistance; explain your own contribution
-and what you understand accurately. This is not a claim of military admission
-eligibility or production security certification.
+- Understand Python functions, classes, and control flow.
+- Understand the original client/server architecture.
+- Learn about authentication, consent, and privacy.
+- Understand what the tests verify and their limitations.
 
+## AI assistance
+
+AI was used extensively in the original experiment. The neutralized edition, tests, and initial documentation were also prepared with AI assistance. This repository records an ongoing learning exercise rather than an independently implemented or fully understood system.
